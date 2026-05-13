@@ -1,0 +1,23 @@
+/* This resets margins so the image hits the very edges */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Fallback color: if the image fails, the screen will be orange */
+    background-color: #ff8000; 
+    
+    /* Ensure the name is EXACTLY what is in your folder */
+    background-image: url("sketch.png");
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    /* VERY IMPORTANT: The body needs height to show a background */
+    min-height: 100vh; 
+    width: 100%;
+}
